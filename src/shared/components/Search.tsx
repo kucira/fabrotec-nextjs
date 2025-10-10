@@ -32,11 +32,12 @@ const Search = ({ params }: { params: any }) => {
   return (
     <form name="form" onSubmit={handleSubmit} className="flex w-full items-center gap-8">
       <input
+        id="search"
         type="search"
         name="search"
         onChange={() => {}}
         placeholder="Search..."
-        className="w-[50%] w-min-[10%] border border-gray-300 rounded-md py-2 px-4 pr-8 ring-blue-500 focus:ring-blue-600"
+        className="w-[50%] w-min-[10%] animate-bounce border border-gray-300 rounded-md py-2 px-4 pr-8 ring-blue-500 focus:ring-blue-600"
       />
       <label htmlFor="category">Category:</label>
       <select
