@@ -1,5 +1,5 @@
 const ImageCarousel = ({ images }: { images: string[] }) => {
-  const [currentIndex, setCurrentIndex] = React.useState(0);
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   const handlePrevious = () => {
     setCurrentIndex(currentIndex - 1);
@@ -42,3 +42,4 @@ const ImageCarousel = ({ images }: { images: string[] }) => {
 };
 
 export default ImageCarousel;
+
