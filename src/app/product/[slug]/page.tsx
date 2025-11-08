@@ -23,6 +23,7 @@ const ProductDetailPage = () => {
         <div className="flex overflow-x-scroll ">
           {data?.images?.map((image: any, index: number) => (
             <Image
+              className="animate-pulse"
               width={20}
               height={20}
               loading="lazy"
@@ -39,3 +40,4 @@ const ProductDetailPage = () => {
 };
 
 export default ProductDetailPage;
+
